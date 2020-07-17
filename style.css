@@ -1,1 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+body .container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: fantasy;
+  background-color: lightgrey;
+}
+
+.container {
+  padding: 30px 20px 0 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0;
+  color: black;
+}
+
+.box {
+  background-color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+}
+
+.box-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.box-body {
+  min-height: 100px;
+}
+
+.box-footer {
+  text-align: center;
+}
+
+.box-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: #e7e9eb;
+  height: 2px;
+}
+
+.box-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.btn {
+  border: none;
+  background-color: red;
+  border-radius: 25px;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 15px 15px 15px 20px;
+  padding: 15px 35px;
+  text-align: center;
+  cursor: pointer;
+  font-family: fantasy;
+}
+
+button[disabled] {
+  cursor: default;
+  background: lightgrey;
+}
+
+.float-right {
+  float: right;
+}
+
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+}

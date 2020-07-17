@@ -1,1 +1,34 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Random Password Generator</h2>
+      </header>
+      <div class="box">
+        <div class="box-header">
+          <h4>Generate A Password</h4>
+        </div>
+        <div class="box-body">
+          <textarea
+            readonly=""
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          >
+          </textarea>
+        </div>
+        <div class="box-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
