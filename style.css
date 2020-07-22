@@ -4,39 +4,45 @@
   box-sizing: border-box;
 }
 
-body .container {
+html,
+body,
+.wrapper {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: fantasy;
-  background-color: lightgrey;
+  font-family: sans-serif;
+  background-color: #f9fbfd;
 }
 
-.container {
-  padding: 30px 20px 0 20px;
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 header {
   text-align: center;
   padding: 20px;
-  padding-top: 0;
-  color: black;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
 }
 
-.box {
-  background-color: white;
+.card {
+  background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
 }
 
-.box-header::after {
+.card-header::after {
   content: " ";
   display: block;
   width: 100%;
@@ -44,15 +50,15 @@ header {
   height: 2px;
 }
 
-.box-body {
+.card-body {
   min-height: 100px;
 }
 
-.box-footer {
+.card-footer {
   text-align: center;
 }
 
-.box-footer::before {
+.card-footer::before {
   content: " ";
   display: block;
   width: 100%;
@@ -60,7 +66,7 @@ header {
   height: 2px;
 }
 
-.box-footer::after {
+.card-footer::after {
   content: " ";
   display: block;
   clear: both;
@@ -68,21 +74,23 @@ header {
 
 .btn {
   border: none;
-  background-color: red;
+  background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
-  margin: 15px 15px 15px 20px;
-  padding: 15px 35px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
   text-align: center;
   cursor: pointer;
-  font-family: fantasy;
 }
 
 button[disabled] {
   cursor: default;
-  background: lightgrey;
+  background: #c0c7cf;
 }
 
 .float-right {
@@ -108,4 +116,22 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
 }
