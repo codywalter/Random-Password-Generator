@@ -7,6 +7,6 @@ Once all parameters have been met a random password will generate in the text fi
 deployed site: https://codywalter.github.io/homework03/
 repository: https://github.com/codywalter/homework03
 
-![](./images/Password-Generator-Deployed-Site)
+![](./images/Password-Generator-Deployed-Site.png)
 
-![](./images/Password-Generator-Deployed-Site-2)
+![](./images/Password-Generator-Deployed-Site-2.png)
